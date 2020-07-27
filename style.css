@@ -73,8 +73,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-color: #e74c3c;
     width: 20vh;
     height: 30vh;
-    min-width: 125px;
-    min-height: 180px;
+    min-width: 20vh;
+    min-height: 30vh;
     margin: 5px;
   }
 
