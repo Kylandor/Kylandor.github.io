@@ -10,7 +10,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
       margin: 0;
       padding: 0;
+      background-color:#383838 ;
   }
+
+div, h1, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    color: #fff;
+    padding-left: 0.5vw;
+    padding-top: 1vh;
+}
 
 .divOne {
     background-image: url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
@@ -21,13 +32,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .name{
-    font-size:15vh;
+    font-size:10vh;
     height: 15vh;
+    color: black;
+    opacity: 0.8;
 }
 
 .bio{
     font-size:3vh;
     height: 3vh;
+    padding: 0.5vw;
+    opacity: 0.8;
 }
 
 .divTwo{
@@ -64,20 +79,58 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .card {
-    background-color: #fff;
+    background-color: #383838;
     min-width: 100%;
     min-height: 30vh;
+    display: flex;
+    overflow-x: auto;
   }
 
   .card--content {
     background-color: #e74c3c;
     min-width: 20vh;
     min-height: 30vh;
-    margin: 5px;
+    margin: 0.1vw;
+    padding-left: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3vh;
+    cursor: pointer;
   }
 
-  .card {display: flex}
 
-  .card {
-    overflow-x: auto;
+
+  .card--content:hover{
+      transition-duration: 0.5s;
+      font-size:3.5vh ;
+      color: rgba(255, 255, 255, 1);
+      border-style: solid;
+      border-width: 2px;
+      border-color: goldenrod;
+      
   }
+
+  .education{
+    background-image: url(https://pbs.twimg.com/media/EBdKRy4XUAAwPCR.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .skills{
+    background-image: url(https://img.wallpapersafari.com/phone/750/1334/49/51/PIaNzH.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .contact{
+    background-image: url(https://simpleicon.com/wp-content/uploads/mail-5.png);
+    background-position: center;
+    background-size: 17vh;
+    background-repeat: no-repeat;
+  }
+
+  .aboutMe{
+    background-image: url(https://i.pinimg.com/originals/41/f1/06/41f10648a12f79c1c4bf9e96dad5a691.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
