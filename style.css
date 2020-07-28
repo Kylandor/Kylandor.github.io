@@ -15,7 +15,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 div, h1, h3{
     font-family: 'Roboto', sans-serif;
-    text-shadow: none;
 }
 
 h3{
@@ -37,6 +36,7 @@ h3{
     height: 15vh;
     color: black;
     opacity: 0.8;
+    text-shadow: none;
 }
 
 .bio{
@@ -44,6 +44,7 @@ h3{
     height: 3vh;
     padding: 0.5vw;
     opacity: 0.8;
+    text-shadow: none;
 }
 
 .divTwo{
