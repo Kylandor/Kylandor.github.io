@@ -29,7 +29,7 @@ h3{
     background-size: cover;
     padding-top: 30vh;
     background-image: linear-gradient(transparent, #202020 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
-    line-height: 5vh;
+    overflow-wrap: break-word;
     
 }
 
@@ -39,6 +39,7 @@ h3{
     padding-left: 1.5vw;
     color: whitesmoke;
     text-shadow: none;
+    overflow-wrap: break-word;
 }
 
 .bio{
