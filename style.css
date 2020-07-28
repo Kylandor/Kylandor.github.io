@@ -40,6 +40,7 @@ h3{
     color: whitesmoke;
     text-shadow: none;
     word-wrap: break-word;
+    display: inline-block;
 }
 
 .bio{
