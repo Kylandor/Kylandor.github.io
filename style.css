@@ -29,13 +29,14 @@ h3{
     background-size: cover;
     padding-top: 30vh;
     background-image: linear-gradient(transparent, #202020 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
+    line-height: 5vh;
     
 }
 
 .name{
     font-size:10vh;
     height: 15vh;
-    padding: 1.5vw;
+    padding-left: 1.5vw;
     color: whitesmoke;
     text-shadow: none;
 }
@@ -43,10 +44,9 @@ h3{
 .bio{
     font-size:3vh;
     height: 3vh;
-    padding: 1.5vw;
+    padding-left: 1.5vw;
     text-shadow: none;
     color: whitesmoke;
-    margin-top: 1px;
 }
 
 .divTwo{
