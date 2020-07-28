@@ -14,11 +14,31 @@
 </div>
 <h3>About Me</h3>
 <section class="card">
-    <div class="card--content education">Education</div>
-    <div class="card--content skills">Skills</div>
-    <div class="card--content aboutMe">Biography</div>
-    <div class="card--content contact">Contact</div>
+    <div id = "eduTab" class="card--content education" onclick="openTab('meEdu'); selectTab('eduTab');">Education</div>
+    <div id = "skillTab" class="card--content skills" onclick="openTab('mySkill'); selectTab('skillTab');">Skills</div>
+    <div id = "bioTab" class="card--content aboutMe" onclick="openTab('myBio'); selectTab('bioTab');">Biography</div>
+    <div id = "contactTab" class="card--content contact" onclick="openTab('contactMe'); selectTab('contactTab');">Contact</div>
   </section>
+
+  <div id = "meEdu" class = "containerTab" style="display:none;">
+    <h1>Education</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "mySkill" class = "containerTab" style="display:none;">
+    <h1>Skills</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "myBio" class = "containerTab" style="display:none;">
+    <h1>Biography</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "contactMe" class = "containerTab" style="display:none;">
+    <h1>Contact Me</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
 
 <h3>Experience</h3>
   <section class="card">
@@ -30,6 +50,45 @@
     <div class="card--content wiki">Wikipedia Game Player</div>
   </section>
 <div class = "test">test</div>
+
+
+
 </body>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+  </script>
+
+<script>
+  function selectTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("card--content");
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove("selected");
+    }
+    document.getElementById(tabName).classList.add("selected");
+  }
+  </script>
+
+<script>
+  function exitButton() {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x = document.getElementsByClassName("card--content");
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove("selected");
+    }
+  }
+  </script>
 
 </html>

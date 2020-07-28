@@ -116,6 +116,14 @@ h3{
       
   }
 
+  .selected{
+    font-size:3.5vh ;
+    color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-color: goldenrod;
+  }
+
   .education{
     background-image: url(https://pbs.twimg.com/media/EBdKRy4XUAAwPCR.jpg);
     background-position: center;
@@ -186,4 +194,10 @@ h3{
     background-size: 20vh;
     background-repeat: no-repeat;
     background-color: thistle;
+  }
+
+  .containerTab {
+    padding: 20px;
+    color: white;
+    background-color: black;
   }
