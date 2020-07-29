@@ -4,6 +4,10 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
     <title>Kyle Kovarik</title>
 </head>
 
@@ -42,14 +46,43 @@
 
 <h3>Experience</h3>
   <section class="card">
-    <div class="card--content capitalOne">Capital One</div>
-    <div class="card--content brunswick">Brunswick</div>
-    <div class="card--content">Music Controlled Lights</div>
-    <div class="card--content">Web Controlled Lights</div>
-    <div class="card--content snake">AI Snake Player</div>
-    <div class="card--content wiki">Wikipedia Game Player</div>
+    <div id = "capitalOneTag" class="card--content capitalOne" onclick="openTab('myCapitalOne'); selectTab('capitalOneTag');">Capital One</div>
+    <div id = "brunswickTab" class="card--content brunswick" onclick="openTab('myBrunswick'); selectTab('brunswickTab');">Brunswick</div>
+    <div id = "musicTab" class="card--content" onclick="openTab('myMusic'); selectTab('musicTab');">Music Controlled Lights</div>
+    <div id = "webTab" class="card--content" onclick="openTab('myWeb'); selectTab('webTab');">Web Controlled Lights</div>
+    <div id = "snakeTab" class="card--content snake" onclick="openTab('mySnake'); selectTab('snakeTab');">AI Snake Player</div>
+    <div id = "wikiTag" class="card--content wiki" onclick="openTab('myWiki'); selectTab('wikiTag');">Wikipedia Game Player</div>
   </section>
-<div class = "test">test</div>
+  
+  <div id = "myCapitalOne" class = "containerTab" style="display:none;">
+    <h1>CapitalOne</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "myBrunswick" class = "containerTab" style="display:none;">
+    <h1>Brunswick</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "myMusic" class = "containerTab" style="display:none;">
+    <h1>Music LED</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "myWeb" class = "containerTab" style="display:none;">
+    <h1>Web LED</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "mySnake" class = "containerTab" style="display:none;">
+    <h1>AI Snake</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
+
+  <div id = "myWiki" class = "containerTab" style="display:none;">
+    <h1>Wikipedia Game</h1>
+    <h2 onclick="exitButton();">Exit</h2>
+  </div>
 
 
 
@@ -73,7 +106,12 @@
     for (i = 0; i < x.length; i++) {
       x[i].classList.remove("selected");
     }
-    document.getElementById(tabName).classList.add("selected");
+    var tab =  document.getElementById(tabName)
+    tab.classList.add("selected");
+    tab.classList.add("heightAnimation");
+    var scrollTo = $(tab).offset().top;
+    $("html, body").animate({scrollTop: scrollTo + 10}, "slow");
+
   }
   </script>
 
