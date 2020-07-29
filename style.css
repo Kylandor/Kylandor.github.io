@@ -199,7 +199,9 @@ h3{
     background-color: black;
     height: 0px;
     opacity: 0;
+    max-height: 0;
     transition: max-height 400s, color 2s;
+    visibility: hidden;
   }
   .containerTab.animated {
     padding: 20px;
@@ -207,6 +209,7 @@ h3{
     color: white;
     max-height: 1000000px;
     opacity: 1;
+    visibility: visible;
   }
 
   .space{
