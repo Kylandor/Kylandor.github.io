@@ -10,11 +10,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
       margin: 0;
       padding: 0;
-      background-color: black ;
+      background-color: #181818 ;
   }
 
 div, h1, h3, h2{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ h3{
     height: 55vh;
     background-size: cover;
     padding-top: 30vh;
-    background-image: linear-gradient(transparent, black 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
+    background-image: linear-gradient(transparent, #181818 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
     word-wrap: break-word;
     
 }
@@ -84,7 +84,7 @@ h3{
 }
 
 .card {
-    background-color: black;
+    background-color: #181818;
     min-width: 100%;
     min-height: 30vh;
     display: flex;
@@ -197,7 +197,7 @@ h3{
   .containerTab {
     padding: 0px;
     color: transparent;
-    background-color: #101010;
+    background-color: black;
     height: 0px;
     opacity: 0;
     max-height: 0;
@@ -215,4 +215,34 @@ h3{
 
   .space{
     height: 100vh;
+  }
+
+  .navBar{
+    height: 8vh;
+    position: fixed;
+    background: linear-gradient(black, 89%, transparent );
+    width: 100%;
+    display: flex;
+    color: white;
+  
+  }
+
+  .navItem{
+    font-size: 2vh;
+    margin-top: auto;
+    margin-left: 3vw;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+
+  .logo{
+    margin-left: 1vw !important;
+    background-image: url(https://fontmeme.com/permalink/200729/1892743a2713a772aa748479aa3898b4.png);
+    background-position: center;
+    background-size: cover;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: 8vh;
+    width: 10vw;
+    background
   }
