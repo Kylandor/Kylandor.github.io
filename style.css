@@ -197,7 +197,6 @@ h3{
     padding: 0px;
     color: transparent;
     background-color: black;
-    max-height: 0px;
     height: 0px;
     opacity: 0;
     transition: max-height 400s, color 2s;
