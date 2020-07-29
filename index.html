@@ -24,22 +24,22 @@
     <div id = "contactTab" class="card--content contact" onclick="openTab('contactMe'); selectTab('contactTab');">Contact</div>
   </section>
 
-  <div id = "meEdu" class = "containerTab" style="display:none;">
+  <div id = "meEdu" class = "containerTab">
     <h1>Education</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "mySkill" class = "containerTab" style="display:none;">
+  <div id = "mySkill" class = "containerTab" >
     <h1>Skills</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "myBio" class = "containerTab" style="display:none;">
+  <div id = "myBio" class = "containerTab">
     <h1>Biography</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "contactMe" class = "containerTab" style="display:none;">
+  <div id = "contactMe" class = "containerTab">
     <h1>Contact Me</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
@@ -54,37 +54,37 @@
     <div id = "wikiTag" class="card--content wiki" onclick="openTab('myWiki'); selectTab('wikiTag');">Wikipedia Game Player</div>
   </section>
   
-  <div id = "myCapitalOne" class = "containerTab" style="display:none;">
+  <div id = "myCapitalOne" class = "containerTab">
     <h1>CapitalOne</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "myBrunswick" class = "containerTab" style="display:none;">
+  <div id = "myBrunswick" class = "containerTab">
     <h1>Brunswick</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "myMusic" class = "containerTab" style="display:none;">
+  <div id = "myMusic" class = "containerTab">
     <h1>Music LED</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "myWeb" class = "containerTab" style="display:none;">
+  <div id = "myWeb" class = "containerTab" >
     <h1>Web LED</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "mySnake" class = "containerTab" style="display:none;">
+  <div id = "mySnake" class = "containerTab" >
     <h1>AI Snake</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "myWiki" class = "containerTab" style="display:none;">
+  <div id = "myWiki" class = "containerTab" >
     <h1>Wikipedia Game</h1>
     <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-
+<div class = "space"></div>
 
 </body>
 
@@ -93,9 +93,11 @@
     var i, x;
     x = document.getElementsByClassName("containerTab");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+      x[i].classList.remove("animated")
     }
-    document.getElementById(tabName).style.display = "block";
+    var tab = document.getElementById(tabName)
+    tab.classList.add("animated")
+
   }
   </script>
 
@@ -108,9 +110,8 @@
     }
     var tab =  document.getElementById(tabName)
     tab.classList.add("selected");
-    tab.classList.add("heightAnimation");
     var scrollTo = $(tab).offset().top;
-    $("html, body").animate({scrollTop: scrollTo + 10}, "slow");
+    $("html, body").animate({scrollTop: scrollTo -50 }, "slow");
 
   }
   </script>
@@ -120,7 +121,7 @@
     var i, x;
     x = document.getElementsByClassName("containerTab");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+      x[i].classList.remove("animated");
     }
     x = document.getElementsByClassName("card--content");
     for (i = 0; i < x.length; i++) {

@@ -194,12 +194,22 @@ h3{
   }
 
   .containerTab {
-    padding: 20px;
-    color: white;
+    padding: 0px;
+    color: transparent;
     background-color: black;
+    max-height: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: max-height 400s, color 2s;
+  }
+  .containerTab.animated {
+    padding: 20px;
+    height: auto;
+    color: white;
+    max-height: 1000000px;
+    opacity: 1;
   }
 
-  .heightAnimation{
-      height: 100px;
-      transition-duration: 2s;
+  .space{
+    height: 100vh;
   }
