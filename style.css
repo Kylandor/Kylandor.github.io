@@ -10,7 +10,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
       margin: 0;
       padding: 0;
-      background-color:#202020 ;
+      background-color: black ;
   }
 
 div, h1, h3, h2{
@@ -28,7 +28,7 @@ h3{
     height: 55vh;
     background-size: cover;
     padding-top: 30vh;
-    background-image: linear-gradient(transparent, #202020 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
+    background-image: linear-gradient(transparent, black 95%), url(https://i.kym-cdn.com/photos/images/newsfeed/001/297/938/8e6.png);
     word-wrap: break-word;
     
 }
@@ -84,7 +84,7 @@ h3{
 }
 
 .card {
-    background-color: #202020;
+    background-color: black;
     min-width: 100%;
     min-height: 30vh;
     display: flex;
@@ -196,7 +196,7 @@ h3{
   .containerTab {
     padding: 0px;
     color: transparent;
-    background-color: black;
+    background-color: #101010;
     height: 0px;
     opacity: 0;
     max-height: 0;
