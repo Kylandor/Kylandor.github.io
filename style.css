@@ -163,7 +163,8 @@ h3{
   .snake{
     background-position: center;
     background-size: cover;
-    background-image: url(images/snakePic.png)
+    background-image: url(images/snakePic.png);
+    box-shadow:0px 0px 0px 1px brown inset;
   }
 
   .capitalOne{
