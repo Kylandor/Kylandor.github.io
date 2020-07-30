@@ -143,9 +143,12 @@ h3{
   }
 
   .aboutMe{
-    background-image: url(https://i.pinimg.com/originals/41/f1/06/41f10648a12f79c1c4bf9e96dad5a691.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Hello_my_name_is_sticker.svg/600px-Hello_my_name_is_sticker.svg.png);
     background-position: center;
     background-size: cover;
+    background-color: slateblue;
+    background-size: 17vh;
+    background-repeat: no-repeat;
   }
   
   .test{
