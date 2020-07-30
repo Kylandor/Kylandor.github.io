@@ -22,6 +22,7 @@ h3{
     color: #fff;
     padding-left: 0.3vw;
     padding-top: 1vh;
+    font-size: 2.5vh;
 }
 
 .divOne {
@@ -137,6 +138,7 @@ h3{
     background-image: url(https://simpleicon.com/wp-content/uploads/mail-5.png);
     background-position: center;
     background-size: 17vh;
+    background-color: rosybrown;
     background-repeat: no-repeat;
   }
 
@@ -164,7 +166,6 @@ h3{
     background-position: center;
     background-size: cover;
     background-image: url(images/snakePic.png);
-    box-shadow:0px 0px 0px 1px brown inset;
   }
 
   .capitalOne{
@@ -214,7 +215,7 @@ h3{
   }
 
   .space{
-    height: 100vh;
+    height: 30vh;
   }
 
   .navBar{
@@ -233,9 +234,15 @@ h3{
     margin-left: 3vw;
     margin-bottom: auto;
     cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .navItem:hover{
+    opacity: 1;
   }
 
   .logo{
+    opacity: 1 !important;
     margin-left: 1vw !important;
     background-image: url(https://fontmeme.com/permalink/200729/1892743a2713a772aa748479aa3898b4.png);
     background-position: center;
@@ -245,4 +252,14 @@ h3{
     height: 8vh;
     width: 10vw;
     background
+  }
+
+  .exitButton{
+    float: right;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .exitButton:hover{
+    opacity: 1;
   }

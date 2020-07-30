@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <script
@@ -17,40 +18,37 @@
   <div class = "navItem" onclick="location.href='https://drive.google.com/file/d/1iLUqd3blzZTZHshvfJwfA3Ep2b3T26GP/view?usp=sharing';">Resume</div>
   <div class = "navItem" onclick="exitButton(); navMove('eduTab');">About Me</div>
   <div class = "navItem" onclick="exitButton(); navMove('capitalOneTag');">Experience</div>
-  <div class = "navItem">Contact Me</div>
+  <div class = "navItem" onclick = "selectTab('contactTab'); openTab('contactMe');">Contact Me</div>
 </div>
 <div class = "divOne">
             <h1 class = "name">Kyle Kovarik</h1>
             <h2 class = "bio">Software Developer | Computer Engineer  | Nerd </h2>
 </div>
+
 <h3>About Me</h3>
 <section class="card">
     <div id = "eduTab" class="card--content education" onclick="openTab('meEdu'); selectTab('eduTab');">Education</div>
     <div id = "skillTab" class="card--content skills" onclick="openTab('mySkill'); selectTab('skillTab');">Skills</div>
     <div id = "bioTab" class="card--content aboutMe" onclick="openTab('myBio'); selectTab('bioTab');">Biography</div>
-    <div id = "contactTab" class="card--content contact" onclick="openTab('contactMe'); selectTab('contactTab');">Contact</div>
   </section>
 
   <div id = "meEdu" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Education</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "mySkill" class = "containerTab" >
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Skills</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "myBio" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Biography</h1>
     <h2>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.</h2>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-  <div id = "contactMe" class = "containerTab">
-    <h1>Contact Me</h1>
-    <h2 onclick="exitButton();">Exit</h2>
-  </div>
+  
 
 <h3>Experience</h3>
   <section class="card">
@@ -63,36 +61,45 @@
   </section>
   
   <div id = "myCapitalOne" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>CapitalOne</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "myBrunswick" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Brunswick</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "myMusic" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Music LED</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "myWeb" class = "containerTab" >
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Web LED</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "mySnake" class = "containerTab" >
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>AI Snake</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
   <div id = "myWiki" class = "containerTab" >
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
     <h1>Wikipedia Game</h1>
-    <h2 onclick="exitButton();">Exit</h2>
   </div>
 
-<div class = "space"></div>
+  <h3>Recommended For You</h3>
+  <section class="card">
+    <div id = "contactTab" class="card--content contact" onclick="openTab('contactMe'); selectTab('contactTab');">Contact Me</div>
+  </section>
+
+  <div id = "contactMe" class = "containerTab">
+    <i class="material-icons exitButton" onclick="exitButton();">clear</i>
+    <h1>Contact Me</h1>
+  </div>
+  <div class = "space"></div>
 
 </body>
 
