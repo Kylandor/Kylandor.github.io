@@ -261,8 +261,6 @@ h3{
     float: right;
     cursor: pointer;
     opacity: 0.8;
-    min-width: 20px;
-    min-height: 20px;
   }
 
   .exitButton:hover{
