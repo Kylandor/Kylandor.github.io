@@ -43,12 +43,15 @@ h3{
   .divOne {
       background-size: auto 100%;
       background-position: top right;
-      height: 25vh;
+      height: 35vh;
       background-image: linear-gradient(transparent, #181818 95%), url(images/me.JPG);
       margin-left: 0px;
   }
   .sizer{
     height: 0.1vh;
+  }
+  .name{
+    font-size:7vh;
   }
 }
 
