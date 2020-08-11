@@ -37,7 +37,7 @@ h3{
 }
 
 .sizer{
-  height: 15vh;
+  height: 1vh;
 }
 @media only screen and (orientation:portrait)  {
   .divOne {
