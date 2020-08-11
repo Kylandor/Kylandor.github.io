@@ -36,6 +36,9 @@ h3{
     
 }
 
+.sizer{
+  height: 15vh;
+}
 @media only screen and (max-device-width: 450px) {
   .divOne {
       background-size: auto 100%;
@@ -43,6 +46,9 @@ h3{
       height: 25vh;
       background-image: linear-gradient(transparent, #181818 95%), url(images/me.JPG);
       margin-left: 0px;
+  }
+  .sizer{
+    height: 0.1vh;
   }
 }
 
