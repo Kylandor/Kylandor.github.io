@@ -39,7 +39,7 @@ h3{
 .sizer{
   height: 15vh;
 }
-@media only screen and (max-device-width: 450px) {
+@media only screen and (orientation:portrait)  {
   .divOne {
       background-size: auto 100%;
       background-position: top right;
