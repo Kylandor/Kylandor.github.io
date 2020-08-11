@@ -14,7 +14,9 @@
 
 <body id = "body">
 <div class = "navBar">
-  <div class = "navItem logo" onclick="navMove('body')"></div>
+  <span class="material-icons navItem2 home" onclick= "navMove('body')" >
+    home
+    </span>
   <div class = "navItem" onclick="location.href='pdfs/resume.pdf';">Resume</div>
   <div class = "navItem" onclick="exitButton(); navMove('eduTab');">About Me</div>
   <div class = "navItem" onclick="exitButton(); navMove('capitalOneTag');">Experience</div>
@@ -269,7 +271,7 @@
     </h2>
   </div>
 
-  <h3>Recommended For You</h3>
+  <h3>Get in Touch</h3>
   <section class="card">
     <div id = "contactTab" class="card--content contact" onclick="openTab('contactMe'); selectTab('contactTab');">Contact Me</div>
   </section>

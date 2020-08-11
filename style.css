@@ -258,8 +258,28 @@ h3{
     opacity: 0.8;
   }
 
+  .navItem2{
+    margin-top: auto;
+    margin-left: 3vw;
+    margin-bottom: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(182, 3, 3);
+  }
+
+  .navItem2:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+
   .navItem:hover{
     opacity: 1;
+    font-size: 2.5vh;
+    transition-duration: 0.5s;
+  }
+
+  .home{
+    font-size: 7vh;
   }
 
   .logo{
