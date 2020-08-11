@@ -216,6 +216,14 @@ h3{
     background-color: thistle;
   }
 
+  .tet{
+    background-image: url(images/tetris.PNG);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: thistle;
+  }
+
   .containerTab {
     padding: 0px;
     color: transparent;
