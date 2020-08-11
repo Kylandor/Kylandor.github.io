@@ -51,6 +51,14 @@ h3{
   .name{
     font-size: 5vh;
   }
+
+  .navItem2{
+    margin-left: 1vw;
+  }
+
+  .navItem{
+    font-size: 1vw;
+  }
 }
 
 .name{
