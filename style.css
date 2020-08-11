@@ -224,6 +224,14 @@ h3{
     background-color: thistle;
   }
 
+  .webpage{
+    background-image: url(images/web.PNG);
+    background-position: top left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: thistle;
+  }
+
   .containerTab {
     padding: 0px;
     color: transparent;
