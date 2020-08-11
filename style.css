@@ -41,6 +41,7 @@ h3{
       background-size: auto 90%;
       background-position: top right;
       height: 25vh;
+      background-image: linear-gradient(transparent, #181818 95%), url(images/me.JPG);
   }
 }
 
