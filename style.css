@@ -198,6 +198,18 @@ h3{
     background-image: url(images/snakePic.png);
   }
 
+  .light1{
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/light1.jpg);
+  }
+
+  .light2{
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/lights2.jpg);
+  }
+
   .capitalOne{
     background-position: center;
     background-size: cover;
@@ -231,6 +243,11 @@ h3{
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-color: thistle;
+    color:rgba(0, 0, 0, 0.8);
+  }
+
+  .tet:hover{
+    color: black !important;
   }
 
   .webpage{
